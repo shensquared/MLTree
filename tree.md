@@ -20,6 +20,7 @@ markmap:
     - 18.05 Introduction to Probability and Statistics
     - 18.650 Fundamentals of Statistics
     - 6.3720 [6.401] Introduction to Statistical Data Analysis
+
     - …plus more in Courses 14 and 15.
   - Inference
     - What do we believe when new information conflicts with old knowledge?
@@ -67,3 +68,11 @@ markmap:
     - 6.8711 [6.802] Computational Systems Biology: Deep Learning in the Life Sciences
     - 6.S980 Machine Learning for Inverse Graphics
     - 6.S982 Clinical Data Learning, Visualization, and Deployments
+  
+  - [Fall23](https://www.eecs.mit.edu/academics/subject-updates/subject-updates-fall-2023/) New/Special
+    - 6.S043/6.S953 Machine Learning for Drug Discovery
+    - 6.S062 Generative Machine Learning in K-12 Education
+    - 6.S951 Modern Mathematical Statistics
+    - 6.S980 Machine Learning for Inverse Graphics
+    - 6.5940 TinyML and Efficient Deep Learning Computing (was 6.S965)
+    - 6.7920 Reinforcement Learning: Foundations and Methods (was 6.246)
