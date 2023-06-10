@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "markmap-cli": "file:./markmap/packages/markmap-cli"
+  }
+}
