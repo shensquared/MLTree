@@ -11,8 +11,8 @@ markmap:
   - General
     - How do we frame a problem and select data that will be useful for making decisions?
     - How do we select a learning algorithm, choose its parameters, and measure its performance?
-    - 6.3900 [6.036] [Introduction to Machine Learning](https://introml.mit.edu/spring23)
-    - 6.7900 [6.867] Machine Learning
+    - 6.3900 [6.036] [Intro to Machine Learning](https://introml.mit.edu/spring23)
+    - 6.7900 [6.867] [Machine Learning](https://gradml.mit.edu)
     - 6.S898 [Deep Learning](https://phillipi.github.io/6.s898/)
   - Statistics
     - How do we use noisy data to make conclusions?
