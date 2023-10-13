@@ -7,4 +7,4 @@ The tree visualization is quickly cobbled together; need to clean up the code to
 
 ## Credits:
 
-Based on [slides](https://github.com/shensquared/mltree/) shared with 6.390[6.036] students in Spring21, from [Leslie Kaelbling](https://people.csail.mit.edu/lpk/).
+Based on [slides](https://github.com/shensquared/MLTree/blob/master/lpk.pdf) shared with 6.390[6.036] students in Spring21, from [Leslie Kaelbling](https://people.csail.mit.edu/lpk/).
