@@ -11,15 +11,15 @@ markmap:
   - General
     - How do we frame a problem and select data that will be useful for making decisions?
     - How do we select a learning algorithm, choose its parameters, and measure its performance?
-    - 6.3900 [6.036] [Intro to Machine Learning](https://introml.mit.edu/spring24)
-    - 6.7900 [6.867] [Machine Learning](https://gradml.mit.edu)
-    - 6.S898 [Deep Learning](https://phillipi.github.io/6.s898/)
+    - 6.390 [6.036] [Intro to Machine Learning](https://introml.mit.edu/)
+    - 6.790 [6.867] [Machine Learning](https://gradml.mit.edu)
+    - 6.796 [Deep Learning](https://phillipi.github.io/6.s898/)
   - Statistics
     - How do we use noisy data to make conclusions?
     - How can we measure how sure (or unsure) we are about these conclusions?
     - 18.05 Introduction to Probability and Statistics
     - 18.650 Fundamentals of Statistics
-    - 6.3720 [6.401] Introduction to Statistical Data Analysis
+    - 6.372 [6.401] Introduction to Statistical Data Analysis
 
     - …plus more in Courses 14 and 15.
   - Inference
@@ -69,12 +69,7 @@ markmap:
     - 6.S980 Machine Learning for Inverse Graphics
     - 6.S982 Clinical Data Learning, Visualization, and Deployments
   
-  - [Spring24](https://www.eecs.mit.edu/academics/subject-updates/subject-updates-spring-2024/) New/Special
-    - 6.S041 Algorithmic and Human Decision-Making
-    - 6.S052/6.S952 Modeling with Machine Learning for Computer Science
-    - 6.S059 Causal Inference (meets with 15.C08, 17.C08)
-    - 6.S953 Embodied Intelligence
-    - 6.S966 Symmetry and its Application to Machine Learning and Scientific Computing
-    - 6.S977 Ethical Machine Learning In Human Deployments
-    - 6.S986 Large Language Models and Beyond
-    - 6.S988 Mathematical Statistics: A Non-Asymptotic Approach (meets with IDS.160, 9.521, 18.656)
+  - [Fall24](https://www.eecs.mit.edu/academics/subject-updates/subject-updates-fall-2024/) New/Special
+    - 6.C40/24.C24 Ethics of Computing
+    - 6.S890 Topics in Multiagent Learning
+    - 6.S951 Modern Mathematical Statistics
