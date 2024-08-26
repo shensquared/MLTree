@@ -74,7 +74,4 @@ markmap:
     - 6.C40/24.C24 Ethics of Computing
     - 6.S890 Topics in Multiagent Learning
     - 6.S951 Modern Mathematical Statistics
-    - 6.S042/6.5820 Computer Networks
-    - 6.S890 Topics in Multiagent Learning
-    - 6.S951 Modern Mathematical Statistics
     - 6.S978 Deep Generative Models
