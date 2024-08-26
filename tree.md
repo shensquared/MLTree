@@ -20,7 +20,7 @@ markmap:
     - 18.05 Introduction to Probability and Statistics
     - 18.650 Fundamentals of Statistics
     - 6.372 [6.401] Introduction to Statistical Data Analysis
-
+    - 6.S951 Modern Mathematical Statistics
     - …plus more in Courses 14 and 15.
   - Inference
     - What do we believe when new information conflicts with old knowledge?
@@ -46,11 +46,13 @@ markmap:
     - 6.S079 [Software Systems for Data Science](http://dsg.csail.mit.edu/6.S079/)
     - 6.S965 TinyML and Efficient Deep Learning Computing
     - 6.S981 Introduction to Program Synthesis
+    - 6.S042/6.5820 Computer Networks
   - Society
     - Who is harmed from how machine learning is used? Who benefits?
     - Who gets to decide how machine learning is used? And how should it be used?
     - 6.3950 [6.404] AI, Decision Making, and Society
     - 6.4590 [6.805] Foundations of Information Policy
+    - 6.C40/24.C40 Ethics of Computing (NEW)
   - Cognition
     - How can we model how humans think?
     - What can machine learning practitioners learn from neurobiology?
@@ -68,8 +70,11 @@ markmap:
     - 6.8711 [6.802] Computational Systems Biology: Deep Learning in the Life Sciences
     - 6.S980 Machine Learning for Inverse Graphics
     - 6.S982 Clinical Data Learning, Visualization, and Deployments
-  
   - [Fall24](https://www.eecs.mit.edu/academics/subject-updates/subject-updates-fall-2024/) New/Special
     - 6.C40/24.C24 Ethics of Computing
     - 6.S890 Topics in Multiagent Learning
     - 6.S951 Modern Mathematical Statistics
+    - 6.S042/6.5820 Computer Networks
+    - 6.S890 Topics in Multiagent Learning
+    - 6.S951 Modern Mathematical Statistics
+    - 6.S978 Deep Generative Models
