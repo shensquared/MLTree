@@ -13,7 +13,7 @@ markmap:
     - How do we select a learning algorithm, choose its parameters, and measure its performance?
     - 6.390 [6.036] [Intro to Machine Learning](https://introml.mit.edu/)
     - 6.790 [6.867] [Machine Learning](https://gradml.mit.edu)
-    - 6.796 [Deep Learning](https://phillipi.github.io/6.s898/)
+    - 6.796 [Deep Learning](https://phillipi.github.io/6.7960/)
   - Statistics
     - How do we use noisy data to make conclusions?
     - How can we measure how sure (or unsure) we are about these conclusions?
@@ -74,4 +74,4 @@ markmap:
     - 6.C40/24.C24 Ethics of Computing
     - 6.S890 Topics in Multiagent Learning
     - 6.S951 Modern Mathematical Statistics
-    - 6.S978 Deep Generative Models
+    - 6.S978 [Deep Generative Models](https://mit-6s978.github.io)
