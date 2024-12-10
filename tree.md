@@ -12,8 +12,10 @@ markmap:
     - How do we frame a problem and select data that will be useful for making decisions?
     - How do we select a learning algorithm, choose its parameters, and measure its performance?
     - 6.390 [6.036] [Intro to Machine Learning](https://introml.mit.edu/)
-    - 6.790 [6.867] [Machine Learning](https://gradml.mit.edu)
+    - 6.C01 Modeling with Machine Learning: from Algorithms to Applications
     - 6.796 [Deep Learning](https://phillipi.github.io/6.7960/)
+    - 6.790 [6.867] [Machine Learning](https://gradml.mit.edu)
+  
   - Statistics
     - How do we use noisy data to make conclusions?
     - How can we measure how sure (or unsure) we are about these conclusions?
@@ -52,7 +54,7 @@ markmap:
     - Who gets to decide how machine learning is used? And how should it be used?
     - 6.3950 [6.404] AI, Decision Making, and Society
     - 6.4590 [6.805] Foundations of Information Policy
-    - 6.C40/24.C40 Ethics of Computing (NEW)
+    - 6.C40/24.C40 Ethics of Computing
   - Cognition
     - How can we model how humans think?
     - What can machine learning practitioners learn from neurobiology?
@@ -60,18 +62,22 @@ markmap:
     - 6.S899 Brain Algorithms
     - 6.S978 Tissue vs. Silicon in Machine Learning
   - Applications
-    - 6.C01 Modeling with Machine Learning: from Algorithms to Applications
     - 6.3730 Statistics, Computation and Applications
     - 6.7930 [6.871] Machine Learning for Healthcare
     - 6.8200 [6.484] Sensorimotor Learning
+    - 6.4300 Introduction to Computer Vision
     - 6.8301 [6.819] Advances in Computer Vision
     - 6.8611 [6.806] Quantitative Methods for Natural Language Processing
     - 6.8620 [6.345] Spoken Language Processing
     - 6.8711 [6.802] Computational Systems Biology: Deep Learning in the Life Sciences
     - 6.S980 Machine Learning for Inverse Graphics
     - 6.S982 Clinical Data Learning, Visualization, and Deployments
-  - [Fall24](https://www.eecs.mit.edu/academics/subject-updates/subject-updates-fall-2024/) New/Special
-    - 6.C40/24.C24 Ethics of Computing
-    - 6.S890 Topics in Multiagent Learning
-    - 6.S951 Modern Mathematical Statistics
-    - 6.S978 [Deep Generative Models](https://mit-6s978.github.io)
+  - [Spring25](https://www.eecs.mit.edu/academics/subject-updates/special-subjects-spring-2025/) New/Special
+    - 6.4300 Intro to Computer Vision
+    - 6.S041 Algorithmic and Human Decision-Making
+    - 6.S899 Learning of Time Series with Interventions
+    - 6.S954 Computer Vision and Planetary Health
+    - 6.S963 Beyond Models – Applying Data Science/AI Effectively
+    - 6.S966 Symmetry and its Application to Machine Learning and Scientific Computing
+    - 6.S982 Diffusion Models: From Theory to Practice
+    - 6.S988 Mathematical Statistics: A Non-Asymptotic Approach
