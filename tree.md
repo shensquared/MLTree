@@ -72,12 +72,8 @@ markmap:
     - 6.8711 [6.802] Computational Systems Biology: Deep Learning in the Life Sciences
     - 6.S980 Machine Learning for Inverse Graphics
     - 6.S982 Clinical Data Learning, Visualization, and Deployments
-  - [Spring25](https://www.eecs.mit.edu/academics/subject-updates/special-subjects-spring-2025/) New/Special
-    - 6.4300 Intro to Computer Vision
-    - 6.S041 Algorithmic and Human Decision-Making
-    - 6.S899 Learning of Time Series with Interventions
-    - 6.S954 Computer Vision and Planetary Health
-    - 6.S963 Beyond Models – Applying Data Science/AI Effectively
-    - 6.S966 Symmetry and its Application to Machine Learning and Scientific Computing
-    - 6.S982 Diffusion Models: From Theory to Practice
-    - 6.S988 Mathematical Statistics: A Non-Asymptotic Approach
+  - [Fall 2025](https://www.eecs.mit.edu/academics/subject-updates/subjects-update-fall-2025/) New/Special
+    - 6.S044 AI and Rationality  
+    - 6.S890 Topics in Multiagent Learning  
+    - 6.S894 Accelerated Computing  
+    - 6.S896 Algorithmic Statistics  
