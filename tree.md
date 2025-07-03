@@ -36,7 +36,6 @@ markmap:
   - Theory
     - How does our model's performance depend on how much data we have?
     - What can we prove about the performance of optimization and reinforcement learning algorithms?
-    - 6.7250 [6.485] Optimization for Machine Learning
     - 6.7910 [6.860] Statistical Learning Theory and Applications
     - 6.7940 [6.231] Dynamic Programming and Reinforcement Learning
     - 6.7950 [6.246] Reinforcement Learning: Foundations and Methods
@@ -62,16 +61,17 @@ markmap:
     - 6.S899 Brain Algorithms
     - 6.S978 Tissue vs. Silicon in Machine Learning
   - Applications
+    - 6.C011/C511 Modeling with Machine Learning for Computer Science
     - 6.3730 Statistics, Computation and Applications
     - 6.7930 [6.871] Machine Learning for Healthcare
     - 6.8200 [6.484] Sensorimotor Learning
     - 6.4300 Introduction to Computer Vision
     - 6.8301 [6.819] Advances in Computer Vision
-    - 6.8611 [6.806] Quantitative Methods for Natural Language Processing
-    - 6.8620 [6.345] Spoken Language Processing
+    - 6.4610 Natural Language Processing
     - 6.8711 [6.802] Computational Systems Biology: Deep Learning in the Life Sciences
     - 6.S980 Machine Learning for Inverse Graphics
     - 6.S982 Clinical Data Learning, Visualization, and Deployments
+
   - [Fall 2025](https://www.eecs.mit.edu/academics/subject-updates/subjects-update-fall-2025/) New/Special
     - 6.S044 AI and Rationality  
     - 6.S890 Topics in Multiagent Learning  
