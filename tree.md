@@ -73,7 +73,7 @@ markmap:
     - 6.S982 Clinical Data Learning, Visualization, and Deployments
 
   - [Fall 2025](https://www.eecs.mit.edu/academics/subject-updates/subjects-update-fall-2025/) New/Special
-    - 6.S044 AI and Rationality  
+    - 6.S044 [AI and Rationality](https://lkaelbling.github.io/AI-and-rationality/)  
     - 6.S890 Topics in Multiagent Learning  
     - 6.S894 Accelerated Computing  
     - 6.S896 Algorithmic Statistics  
