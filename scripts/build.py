@@ -34,16 +34,28 @@ def run_markmap():
 
 
 def load_course_data() -> dict:
-    """Load scraped course metadata."""
-    data_path = PROJECT_ROOT / "data" / "course_data.json"
+    """Load scraped course metadata from all sources."""
+    data = {}
 
-    if not data_path.exists():
-        print(f"Warning: {data_path} not found")
+    # Load main Fireroad course data
+    main_data_path = PROJECT_ROOT / "data" / "course_data.json"
+    if main_data_path.exists():
+        with open(main_data_path) as f:
+            data.update(json.load(f))
+    else:
+        print(f"Warning: {main_data_path} not found")
         print("Run 'python scripts/scrape_courses.py' first to fetch course data")
-        return {}
 
-    with open(data_path) as f:
-        return json.load(f)
+    # Load subject updates (special topics courses)
+    subject_updates_dir = PROJECT_ROOT / "data"
+    for updates_file in subject_updates_dir.glob("subject_updates_*.json"):
+        print(f"Loading subject updates from {updates_file.name}...")
+        with open(updates_file) as f:
+            updates = json.load(f)
+            # Subject updates override main data for special topics
+            data.update(updates)
+
+    return data
 
 
 def get_toggle_ui() -> str:

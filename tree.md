@@ -72,8 +72,15 @@ markmap:
     - 6.S980 Machine Learning for Inverse Graphics
     - 6.S982 Clinical Data Learning, Visualization, and Deployments
 
-  - [Fall 2025](https://www.eecs.mit.edu/academics/subject-updates/subjects-update-fall-2025/) New/Special
-    - 6.S044 [AI and Rationality](https://lkaelbling.github.io/AI-and-rationality/)  
-    - 6.S890 Topics in Multiagent Learning  
-    - 6.S894 Accelerated Computing  
-    - 6.S896 Algorithmic Statistics  
+  - [Spring 2026](https://www.eecs.mit.edu/academics/subject-updates/subject-updates-spring-2026/) New/Special
+    - 6.S051/17.S917 AI Alignment: Moral, Political, and Computational Foundations
+    - 6.S056 Hack Yourself: Data-Driven Learning and Wellbeing
+    - 6.S058 Introduction to Computer Vision
+    - 6.S080/16.S690 Introduction to Autonomy
+    - 6.S891/6.S893/12.S992 AI for Climate Action
+    - 6.S899 Learning Time Series With Interventions
+    - 6.S955 Machine Learning for Signal Processing
+    - 6.S976/18.S996 Cryptography and Machine Learning: Foundations and Frontiers
+    - 6.S977 Ethical Machine Learning in Human Systems
+    - 6.S985 Modeling: Multimodal Approaches
+    - 6.S986 Uncertainty Quantification with AI

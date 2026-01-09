@@ -14,10 +14,11 @@ python scripts/build.py
 
 ### Updating course data
 The tree includes filter toggles for Fall/Spring semesters and Undergrad/Grad levels.
-Course metadata is scraped from MIT's Fireroad API. To refresh the data:
+Course metadata is scraped from MIT's Fireroad API and EECS subject updates. To refresh:
 ```bash
-python scripts/scrape_courses.py  # Fetches latest course offerings
-python scripts/build.py           # Rebuilds tree.html with filters
+python scripts/scrape_courses.py       # Fetches from Fireroad API
+python scripts/scrape_subject_updates.py  # Fetches EECS subject updates (special topics)
+python scripts/build.py                # Rebuilds tree.html with filters
 ```
 
 ### Manual build (without filters)
