@@ -62,6 +62,7 @@ def get_toggle_ui() -> str:
     <button class="filter-btn" data-type="level" data-value="undergrad" onclick="setFilter('level', 'undergrad')">Undergrad</button>
     <button class="filter-btn" data-type="level" data-value="grad" onclick="setFilter('level', 'grad')">Grad</button>
   </div>
+  <div class="filter-hint">Click nodes to expand; hover course number for details</div>
 </div>
 
 <style>
@@ -86,6 +87,16 @@ def get_toggle_ui() -> str:
 
 .filter-group:last-child {
   margin-bottom: 0;
+}
+
+.filter-hint {
+  margin-top: 10px;
+  padding-top: 8px;
+  border-top: 1px solid #eee;
+  font-size: 11px;
+  color: #888;
+  text-align: center;
+  font-style: italic;
 }
 
 .filter-label {
@@ -137,6 +148,85 @@ def get_toggle_ui() -> str:
 path.markmap-link.filtered-out {
   stroke-opacity: 0.2 !important;
   transition: stroke-opacity 0.2s ease;
+}
+
+/* Course link styling */
+.course-link {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px dotted currentColor;
+  cursor: pointer;
+}
+
+.course-link:hover {
+  border-bottom-style: solid;
+}
+
+/* Tippy tooltip styling */
+.tippy-box[data-theme~='course'] {
+  background-color: #fff;
+  color: #333;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.15);
+  font-size: 13px;
+  max-width: 350px;
+}
+
+.tippy-box[data-theme~='course'] .tippy-content {
+  padding: 12px 14px;
+}
+
+.tippy-box[data-theme~='course'] .tippy-arrow {
+  color: #fff;
+}
+
+.tippy-box[data-theme~='course'] .tippy-arrow::before {
+  border-top-color: #ddd;
+}
+
+.course-tooltip-title {
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 6px;
+  color: #222;
+}
+
+.course-tooltip-meta {
+  font-size: 12px;
+  color: #666;
+  margin-bottom: 8px;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.course-tooltip-meta span {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.course-tooltip-desc {
+  font-size: 12px;
+  line-height: 1.5;
+  color: #444;
+}
+
+.course-tooltip-links {
+  margin-top: 10px;
+  padding-top: 8px;
+  border-top: 1px solid #eee;
+  font-size: 12px;
+}
+
+.course-tooltip-links a {
+  color: #0066cc;
+  text-decoration: none;
+  margin-right: 12px;
+}
+
+.course-tooltip-links a:hover {
+  text-decoration: underline;
 }
 </style>
 '''
@@ -263,7 +353,10 @@ def get_filter_script(course_data: dict) -> str:
     const observer = new MutationObserver(() => {{
       // Debounce to avoid excessive calls during animations
       clearTimeout(window._filterTimeout);
-      window._filterTimeout = setTimeout(applyFilters, 50);
+      window._filterTimeout = setTimeout(() => {{
+        applyFilters();
+        initializeTooltips(); // Re-init tooltips for newly rendered nodes
+      }}, 50);
     }});
 
     observer.observe(svg, {{
@@ -275,17 +368,125 @@ def get_filter_script(course_data: dict) -> str:
 
     // Initial application
     applyFilters();
+
+    // Initialize tooltips and links
+    initializeTooltips();
+  }}
+
+  // Build tooltip HTML content
+  function buildTooltipContent(courseId, data) {{
+    const semesters = [];
+    if (data.offered_fall) semesters.push('Fall');
+    if (data.offered_spring) semesters.push('Spring');
+    if (data.offered_IAP) semesters.push('IAP');
+    const semesterStr = semesters.length > 0 ? semesters.join(', ') : 'Not offered';
+
+    const levelStr = data.level === 'G' ? 'Graduate' : 'Undergraduate';
+    const unitsStr = data.units ? data.units + ' units' : '';
+
+    let html = `<div class="course-tooltip-title">${{data.title || courseId}}</div>`;
+
+    html += `<div class="course-tooltip-meta">`;
+    html += `<span>${{levelStr}}</span>`;
+    if (unitsStr) html += `<span>${{unitsStr}}</span>`;
+    html += `<span>${{semesterStr}}</span>`;
+    html += `</div>`;
+
+    if (data.instructors) {{
+      html += `<div class="course-tooltip-meta"><span>Instructor: ${{data.instructors}}</span></div>`;
+    }}
+
+    if (data.description) {{
+      html += `<div class="course-tooltip-desc">${{data.description}}</div>`;
+    }}
+
+    html += `<div class="course-tooltip-links">`;
+    html += `<a href="${{data.catalog_url}}" target="_blank">MIT Catalog</a>`;
+    if (data.course_url) {{
+      html += `<a href="${{data.course_url}}" target="_blank">Course Website</a>`;
+    }}
+    html += `</div>`;
+
+    return html;
+  }}
+
+  // Initialize tooltips for course nodes
+  function initializeTooltips() {{
+    const svg = document.querySelector('#mindmap');
+    if (!svg || typeof tippy === 'undefined') return;
+
+    // Find all foreignObject elements (where course text is rendered)
+    const foreignObjects = svg.querySelectorAll('foreignObject');
+
+    foreignObjects.forEach(fo => {{
+      // Skip if already has tooltip
+      if (fo._tippy) return;
+
+      const content = fo.textContent || '';
+      const courseNumbers = extractCourseNumbers(content);
+
+      if (courseNumbers.length === 0) return;
+
+      // Find first known course
+      let primaryCourse = null;
+      let primaryData = null;
+      for (const num of courseNumbers) {{
+        if (COURSE_DATA[num]) {{
+          primaryCourse = num;
+          primaryData = COURSE_DATA[num];
+          break;
+        }}
+      }}
+
+      if (!primaryData) return;
+
+      // Create tooltip on the foreignObject element
+      tippy(fo, {{
+        content: buildTooltipContent(primaryCourse, primaryData),
+        allowHTML: true,
+        theme: 'course',
+        placement: 'right',
+        interactive: true,
+        appendTo: document.body,
+        maxWidth: 350,
+        delay: [150, 0],
+        trigger: 'mouseenter',
+      }});
+    }});
+  }}
+
+  // Wait for Tippy to be available
+  function waitForTippy(callback, attempts = 0) {{
+    if (typeof tippy !== 'undefined') {{
+      callback();
+    }} else if (attempts < 50) {{
+      setTimeout(() => waitForTippy(callback, attempts + 1), 100);
+    }} else {{
+      console.warn('Tippy.js not loaded, tooltips disabled');
+      callback();
+    }}
   }}
 
   // Initialize when DOM is ready
   if (document.readyState === 'loading') {{
-    document.addEventListener('DOMContentLoaded', setupObserver);
+    document.addEventListener('DOMContentLoaded', () => {{
+      waitForTippy(setupObserver);
+    }});
   }} else {{
-    // Small delay to ensure markmap has rendered
-    setTimeout(setupObserver, 200);
+    // Wait for markmap to render and Tippy to load
+    setTimeout(() => waitForTippy(setupObserver), 300);
   }}
 }})();
 </script>
+'''
+
+
+def get_tippy_scripts() -> str:
+    """Return Tippy.js script tags to inject in head."""
+    return '''
+<!-- Tippy.js for course tooltips -->
+<script src="https://unpkg.com/@popperjs/core@2"></script>
+<script src="https://unpkg.com/tippy.js@6"></script>
 '''
 
 
@@ -293,6 +494,10 @@ def inject_filtering(html: str, course_data: dict) -> str:
     """Inject course data and filtering UI into HTML."""
     toggle_ui = get_toggle_ui()
     filter_script = get_filter_script(course_data)
+    tippy_scripts = get_tippy_scripts()
+
+    # Inject Tippy.js in head (before </head>)
+    html = html.replace('</head>', tippy_scripts + '\n</head>')
 
     # Inject UI after <body>
     html = html.replace('<body>', '<body>\n' + toggle_ui)

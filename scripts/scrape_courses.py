@@ -140,6 +140,19 @@ def extract_relevant_courses(all_courses: list) -> dict:
 
         if course:
             # Extract the fields we need
+            subject_id = course.get("subject_id", "")
+            description = course.get("description", "")
+            # Truncate long descriptions
+            if len(description) > 300:
+                description = description[:297] + "..."
+
+            # Build catalog URL
+            # Format: http://student.mit.edu/catalog/search.cgi?search=6.3900
+            catalog_url = f"http://student.mit.edu/catalog/search.cgi?search={subject_id}"
+
+            # Get course URL if available (some courses have their own websites)
+            course_url = course.get("url", "")
+
             course_data = {
                 "level": course.get("level", "U"),  # "U" or "G"
                 "offered_fall": course.get("offered_fall", False),
@@ -147,6 +160,11 @@ def extract_relevant_courses(all_courses: list) -> dict:
                 "offered_IAP": course.get("offered_IAP", False),
                 "offered_summer": course.get("offered_summer", False),
                 "title": course.get("title", ""),
+                "description": description,
+                "catalog_url": catalog_url,
+                "course_url": course_url,
+                "units": course.get("total_units", ""),
+                "instructors": ", ".join(course.get("instructors", [])) if course.get("instructors") else "",
             }
 
             # Store under the ID we searched for
