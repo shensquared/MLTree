@@ -1,0 +1,6 @@
+# Dependencies for MLCoursesTree build scripts
+# Note: scrape_courses.py uses only stdlib (urllib), no external deps needed
+# This file is kept for future extensions
+
+# Optional: if you prefer requests over urllib
+# requests>=2.28.0

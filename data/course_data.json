@@ -1,0 +1,570 @@
+{
+  "18.05": {
+    "level": "U",
+    "offered_IAP": false,
+    "offered_fall": false,
+    "offered_spring": true,
+    "offered_summer": false,
+    "title": "Introduction to Probability and Statistics"
+  },
+  "18.650": {
+    "level": "U",
+    "offered_IAP": false,
+    "offered_fall": true,
+    "offered_spring": true,
+    "offered_summer": false,
+    "title": "Fundamentals of Statistics"
+  },
+  "24.C40": {
+    "level": "U",
+    "offered_IAP": false,
+    "offered_fall": true,
+    "offered_spring": false,
+    "offered_summer": false,
+    "title": "Ethics of Computing"
+  },
+  "6.008": {
+    "level": "U",
+    "offered_IAP": false,
+    "offered_fall": true,
+    "offered_spring": false,
+    "offered_summer": false,
+    "title": "Introduction to Inference"
+  },
+  "6.036": {
+    "level": "U",
+    "offered_IAP": false,
+    "offered_fall": true,
+    "offered_spring": true,
+    "offered_summer": false,
+    "title": "Introduction to Machine Learning"
+  },
+  "6.041": {
+    "level": "U",
+    "offered_IAP": false,
+    "offered_fall": true,
+    "offered_spring": true,
+    "offered_summer": false,
+    "title": "Introduction to Probability"
+  },
+  "6.231": {
+    "level": "G",
+    "offered_IAP": false,
+    "offered_fall": false,
+    "offered_spring": true,
+    "offered_summer": false,
+    "title": "Dynamic Programming and Reinforcement Learning"
+  },
+  "6.246": {
+    "level": "G",
+    "offered_IAP": false,
+    "offered_fall": true,
+    "offered_spring": false,
+    "offered_summer": false,
+    "title": "Advanced Topics in Control"
+  },
+  "6.3700": {
+    "level": "U",
+    "offered_IAP": false,
+    "offered_fall": true,
+    "offered_spring": true,
+    "offered_summer": false,
+    "title": "Introduction to Probability"
+  },
+  "6.372": {
+    "level": "U",
+    "offered_IAP": false,
+    "offered_fall": false,
+    "offered_spring": true,
+    "offered_summer": false,
+    "title": "Introduction to Statistical Data Analysis"
+  },
+  "6.3720": {
+    "level": "U",
+    "offered_IAP": false,
+    "offered_fall": false,
+    "offered_spring": true,
+    "offered_summer": false,
+    "title": "Introduction to Statistical Data Analysis"
+  },
+  "6.3730": {
+    "level": "U",
+    "offered_IAP": false,
+    "offered_fall": false,
+    "offered_spring": true,
+    "offered_summer": false,
+    "title": "Statistics, Computation and Applications"
+  },
+  "6.3800": {
+    "level": "U",
+    "offered_IAP": false,
+    "offered_fall": true,
+    "offered_spring": false,
+    "offered_summer": false,
+    "title": "Introduction to Inference"
+  },
+  "6.390": {
+    "level": "U",
+    "offered_IAP": false,
+    "offered_fall": true,
+    "offered_spring": true,
+    "offered_summer": false,
+    "title": "Introduction to Machine Learning"
+  },
+  "6.3900": {
+    "level": "U",
+    "offered_IAP": false,
+    "offered_fall": true,
+    "offered_spring": true,
+    "offered_summer": false,
+    "title": "Introduction to Machine Learning"
+  },
+  "6.3950": {
+    "level": "U",
+    "offered_IAP": false,
+    "offered_fall": true,
+    "offered_spring": false,
+    "offered_summer": false,
+    "title": "AI, Decision Making, and Society"
+  },
+  "6.401": {
+    "level": "U",
+    "offered_IAP": false,
+    "offered_fall": false,
+    "offered_spring": true,
+    "offered_summer": false,
+    "title": "Introduction to Statistical Data Analysis"
+  },
+  "6.404": {
+    "level": "U",
+    "offered_IAP": false,
+    "offered_fall": true,
+    "offered_spring": false,
+    "offered_summer": false,
+    "title": "AI, Decision Making, and Society"
+  },
+  "6.4120": {
+    "level": "U",
+    "offered_IAP": false,
+    "offered_fall": true,
+    "offered_spring": false,
+    "offered_summer": false,
+    "title": "Computational Cognitive Science"
+  },
+  "6.419": {
+    "level": "U",
+    "offered_IAP": false,
+    "offered_fall": false,
+    "offered_spring": true,
+    "offered_summer": false,
+    "title": "Statistics, Computation and Applications"
+  },
+  "6.4300": {
+    "level": "U",
+    "offered_IAP": false,
+    "offered_fall": false,
+    "offered_spring": true,
+    "offered_summer": false,
+    "title": "Introduction to Computer Vision"
+  },
+  "6.435": {
+    "level": "G",
+    "offered_IAP": false,
+    "offered_fall": false,
+    "offered_spring": true,
+    "offered_summer": false,
+    "title": "Bayesian Modeling and Inference"
+  },
+  "6.436": {
+    "level": "G",
+    "offered_IAP": false,
+    "offered_fall": true,
+    "offered_spring": false,
+    "offered_summer": false,
+    "title": "Fundamentals of Probability"
+  },
+  "6.437": {
+    "level": "G",
+    "offered_IAP": false,
+    "offered_fall": false,
+    "offered_spring": true,
+    "offered_summer": false,
+    "title": "Inference and Information"
+  },
+  "6.438": {
+    "level": "G",
+    "offered_IAP": false,
+    "offered_fall": true,
+    "offered_spring": false,
+    "offered_summer": false,
+    "title": "Algorithms for Inference"
+  },
+  "6.4590": {
+    "level": "U",
+    "offered_IAP": false,
+    "offered_fall": false,
+    "offered_spring": true,
+    "offered_summer": false,
+    "title": "Foundations of Information Policy"
+  },
+  "6.4610": {
+    "level": "U",
+    "offered_IAP": false,
+    "offered_fall": true,
+    "offered_spring": false,
+    "offered_summer": false,
+    "title": "Natural Language Processing"
+  },
+  "6.484": {
+    "level": "G",
+    "offered_IAP": false,
+    "offered_fall": false,
+    "offered_spring": true,
+    "offered_summer": false,
+    "title": "Sensorimotor Learning"
+  },
+  "6.5820": {
+    "level": "G",
+    "offered_IAP": false,
+    "offered_fall": true,
+    "offered_spring": false,
+    "offered_summer": false,
+    "title": "Computer Networks"
+  },
+  "6.5931": {
+    "level": "U",
+    "offered_IAP": false,
+    "offered_fall": false,
+    "offered_spring": true,
+    "offered_summer": false,
+    "title": "Hardware Architecture for Deep Learning"
+  },
+  "6.7700": {
+    "level": "G",
+    "offered_IAP": false,
+    "offered_fall": true,
+    "offered_spring": false,
+    "offered_summer": false,
+    "title": "Fundamentals of Probability"
+  },
+  "6.7800": {
+    "level": "G",
+    "offered_IAP": false,
+    "offered_fall": false,
+    "offered_spring": true,
+    "offered_summer": false,
+    "title": "Inference and Information"
+  },
+  "6.7810": {
+    "level": "G",
+    "offered_IAP": false,
+    "offered_fall": true,
+    "offered_spring": false,
+    "offered_summer": false,
+    "title": "Algorithms for Inference"
+  },
+  "6.7830": {
+    "level": "G",
+    "offered_IAP": false,
+    "offered_fall": false,
+    "offered_spring": true,
+    "offered_summer": false,
+    "title": "Bayesian Modeling and Inference"
+  },
+  "6.790": {
+    "level": "G",
+    "offered_IAP": false,
+    "offered_fall": true,
+    "offered_spring": false,
+    "offered_summer": false,
+    "title": "Machine Learning"
+  },
+  "6.7900": {
+    "level": "G",
+    "offered_IAP": false,
+    "offered_fall": true,
+    "offered_spring": false,
+    "offered_summer": false,
+    "title": "Machine Learning"
+  },
+  "6.7910": {
+    "level": "G",
+    "offered_IAP": false,
+    "offered_fall": true,
+    "offered_spring": false,
+    "offered_summer": false,
+    "title": "Statistical Learning Theory and Applications"
+  },
+  "6.7930": {
+    "level": "G",
+    "offered_IAP": false,
+    "offered_fall": false,
+    "offered_spring": true,
+    "offered_summer": false,
+    "title": "Machine Learning for Healthcare"
+  },
+  "6.7940": {
+    "level": "G",
+    "offered_IAP": false,
+    "offered_fall": false,
+    "offered_spring": true,
+    "offered_summer": false,
+    "title": "Dynamic Programming and Reinforcement Learning"
+  },
+  "6.7950": {
+    "level": "G",
+    "offered_IAP": false,
+    "offered_fall": true,
+    "offered_spring": false,
+    "offered_summer": false,
+    "title": "Advanced Topics in Control"
+  },
+  "6.796": {
+    "level": "G",
+    "offered_IAP": false,
+    "offered_fall": true,
+    "offered_spring": false,
+    "offered_summer": false,
+    "title": "Deep Learning"
+  },
+  "6.7960": {
+    "level": "G",
+    "offered_IAP": false,
+    "offered_fall": true,
+    "offered_spring": false,
+    "offered_summer": false,
+    "title": "Deep Learning"
+  },
+  "6.802": {
+    "level": "U",
+    "offered_IAP": false,
+    "offered_fall": false,
+    "offered_spring": true,
+    "offered_summer": false,
+    "title": "Computational Systems Biology: Deep Learning in the Life Sciences"
+  },
+  "6.804": {
+    "level": "U",
+    "offered_IAP": false,
+    "offered_fall": true,
+    "offered_spring": false,
+    "offered_summer": false,
+    "title": "Computational Cognitive Science"
+  },
+  "6.805": {
+    "level": "U",
+    "offered_IAP": false,
+    "offered_fall": false,
+    "offered_spring": true,
+    "offered_summer": false,
+    "title": "Foundations of Information Policy"
+  },
+  "6.812": {
+    "level": "U",
+    "offered_IAP": false,
+    "offered_fall": false,
+    "offered_spring": true,
+    "offered_summer": false,
+    "title": "Hardware Architecture for Deep Learning"
+  },
+  "6.819": {
+    "level": "U",
+    "offered_IAP": false,
+    "offered_fall": false,
+    "offered_spring": true,
+    "offered_summer": false,
+    "title": "Advances in Computer Vision"
+  },
+  "6.8200": {
+    "level": "G",
+    "offered_IAP": false,
+    "offered_fall": false,
+    "offered_spring": true,
+    "offered_summer": false,
+    "title": "Sensorimotor Learning"
+  },
+  "6.829": {
+    "level": "G",
+    "offered_IAP": false,
+    "offered_fall": true,
+    "offered_spring": false,
+    "offered_summer": false,
+    "title": "Computer Networks"
+  },
+  "6.8301": {
+    "level": "U",
+    "offered_IAP": false,
+    "offered_fall": false,
+    "offered_spring": true,
+    "offered_summer": false,
+    "title": "Advances in Computer Vision"
+  },
+  "6.860": {
+    "level": "G",
+    "offered_IAP": false,
+    "offered_fall": true,
+    "offered_spring": false,
+    "offered_summer": false,
+    "title": "Statistical Learning Theory and Applications"
+  },
+  "6.867": {
+    "level": "G",
+    "offered_IAP": false,
+    "offered_fall": true,
+    "offered_spring": false,
+    "offered_summer": false,
+    "title": "Machine Learning"
+  },
+  "6.871": {
+    "level": "G",
+    "offered_IAP": false,
+    "offered_fall": false,
+    "offered_spring": true,
+    "offered_summer": false,
+    "title": "Machine Learning for Healthcare"
+  },
+  "6.8711": {
+    "level": "U",
+    "offered_IAP": false,
+    "offered_fall": false,
+    "offered_spring": true,
+    "offered_summer": false,
+    "title": "Computational Systems Biology: Deep Learning in the Life Sciences"
+  },
+  "6.C01": {
+    "level": "U",
+    "offered_IAP": false,
+    "offered_fall": false,
+    "offered_spring": true,
+    "offered_summer": false,
+    "title": "Modeling with Machine Learning: from Algorithms to Applications"
+  },
+  "6.C011": {
+    "level": "U",
+    "offered_IAP": false,
+    "offered_fall": false,
+    "offered_spring": true,
+    "offered_summer": false,
+    "title": "Modeling with Machine Learning for Computer Science"
+  },
+  "6.C40": {
+    "level": "U",
+    "offered_IAP": false,
+    "offered_fall": true,
+    "offered_spring": false,
+    "offered_summer": false,
+    "title": "Ethics of Computing"
+  },
+  "6.C511": {
+    "level": "G",
+    "offered_IAP": false,
+    "offered_fall": false,
+    "offered_spring": true,
+    "offered_summer": false,
+    "title": "Modeling with Machine Learning for Computer Science"
+  },
+  "6.S042": {
+    "level": "U",
+    "offered_IAP": false,
+    "offered_fall": true,
+    "offered_spring": false,
+    "offered_summer": false,
+    "title": "Special Subject in Electrical Engineering and Computer Science"
+  },
+  "6.S044": {
+    "level": "U",
+    "offered_IAP": false,
+    "offered_fall": true,
+    "offered_spring": false,
+    "offered_summer": false,
+    "title": "Special Subject in Electrical Engineering and Computer Science"
+  },
+  "6.S079": {
+    "level": "U",
+    "offered_IAP": false,
+    "offered_fall": false,
+    "offered_spring": true,
+    "offered_summer": false,
+    "title": "Special Subject in Electrical Engineering and Computer Science"
+  },
+  "6.S890": {
+    "level": "G",
+    "offered_IAP": false,
+    "offered_fall": true,
+    "offered_spring": false,
+    "offered_summer": false,
+    "title": "Special Subject in Electrical Engineering and Computer Science"
+  },
+  "6.S894": {
+    "level": "G",
+    "offered_IAP": false,
+    "offered_fall": true,
+    "offered_spring": false,
+    "offered_summer": false,
+    "title": "Special Subject in Electrical Engineering and Computer Science"
+  },
+  "6.S896": {
+    "level": "G",
+    "offered_IAP": false,
+    "offered_fall": true,
+    "offered_spring": false,
+    "offered_summer": false,
+    "title": "Special Subject in Electrical Engineering and Computer Science"
+  },
+  "6.S899": {
+    "level": "G",
+    "offered_IAP": false,
+    "offered_fall": false,
+    "offered_spring": true,
+    "offered_summer": false,
+    "title": "Special Subject in Computer Science"
+  },
+  "6.S951": {
+    "level": "G",
+    "offered_IAP": false,
+    "offered_fall": true,
+    "offered_spring": false,
+    "offered_summer": false,
+    "title": "Special Subject in Electrical Engineering and Computer Science"
+  },
+  "6.S965": {
+    "level": "G",
+    "offered_IAP": false,
+    "offered_fall": true,
+    "offered_spring": false,
+    "offered_summer": false,
+    "title": "Special Studies: EECS"
+  },
+  "6.S978": {
+    "level": "G",
+    "offered_IAP": false,
+    "offered_fall": true,
+    "offered_spring": false,
+    "offered_summer": false,
+    "title": "Special Subject in Electrical Engineering and Computer Science"
+  },
+  "6.S980": {
+    "level": "G",
+    "offered_IAP": false,
+    "offered_fall": true,
+    "offered_spring": false,
+    "offered_summer": false,
+    "title": "Special Subject in Electrical Engineering and Computer Science"
+  },
+  "6.S981": {
+    "level": "G",
+    "offered_IAP": false,
+    "offered_fall": true,
+    "offered_spring": false,
+    "offered_summer": false,
+    "title": "Special Subject in Electrical Engineering and Computer Science"
+  },
+  "6.S982": {
+    "level": "G",
+    "offered_IAP": false,
+    "offered_fall": false,
+    "offered_spring": true,
+    "offered_summer": false,
+    "title": "Special Subject in Electrical Engineering and Computer Science"
+  }
+}
