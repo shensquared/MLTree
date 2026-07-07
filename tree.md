@@ -72,15 +72,10 @@ markmap:
     - 6.S980 Machine Learning for Inverse Graphics
     - 6.S982 Clinical Data Learning, Visualization, and Deployments
 
-  - [Spring 2026](https://www.eecs.mit.edu/academics/subject-updates/subject-updates-spring-2026/) New/Special
-    - 6.S051/17.S917 AI Alignment: Moral, Political, and Computational Foundations
-    - 6.S056 Hack Yourself: Data-Driven Learning and Wellbeing
-    - 6.S058 Introduction to Computer Vision
-    - 6.S080/16.S690 Introduction to Autonomy
-    - 6.S891/6.S893/12.S992 AI for Climate Action
-    - 6.S899 Learning Time Series With Interventions
-    - 6.S955 Machine Learning for Signal Processing
-    - 6.S976/18.S996 Cryptography and Machine Learning: Foundations and Frontiers
-    - 6.S977 Ethical Machine Learning in Human Systems
-    - 6.S985 Modeling: Multimodal Approaches
-    - 6.S986 Uncertainty Quantification with AI
+  - [Fall 2026](https://www.eecs.mit.edu/academics/subject-updates/subject-updates-fall-2026/) New/Special
+    - 6.S951 AI for Science: Generative AI for Scientific Discovery
+    - 6.S978 Engineering AI Systems and Agents
+    - 6.S979 Introduction to LLM Inference Systems
+    - 6.7980 Topics in Multiagent Learning (was 6.S890)
+    - 6.3930/2 AI and Decision Making in Medicine: From Disease to Therapy (was 6.S043/6.S983)
+    - 21M.589 Audio Computing: Processing Sound in Engineering, Science, and the Arts

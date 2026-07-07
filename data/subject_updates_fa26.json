@@ -1,0 +1,93 @@
+{
+  "21M.589": {
+    "catalog_url": "http://student.mit.edu/catalog/search.cgi?search=21M.589",
+    "course_url": "",
+    "description": "Computational tools for sound and vibration analysis, including basic signal processing, machine learning audio, microphone and speaker arrays, signal enhancement and restoration, and psychoacoustics. Applications include sound-event classifiers, speech recognition, denoising, and source separation.",
+    "instructors": "Paris Smaragdis, Mark Rau",
+    "level": "G",
+    "offered_IAP": false,
+    "offered_fall": true,
+    "offered_spring": false,
+    "offered_summer": false,
+    "title": "Audio Computing: Processing Sound in Engineering, Science, and the Arts",
+    "units": 12
+  },
+  "6.3930": {
+    "catalog_url": "http://student.mit.edu/catalog/search.cgi?search=6.3930",
+    "course_url": "",
+    "description": "Fundamental principles and applications of AI in medicine and medical research. Introduces machine learning for clinical decision support, personalized medicine, and computational methods for drug optimization and protein folding, stressing clinical reasoning, risk stratification, and the design of ...",
+    "instructors": "Regina Barzilay, Collin Stultz",
+    "level": "U",
+    "offered_IAP": false,
+    "offered_fall": true,
+    "offered_spring": false,
+    "offered_summer": false,
+    "title": "AI and Decision Making in Medicine: From Disease to Therapy (was 6.S043/6.S983)",
+    "units": 12
+  },
+  "6.3932": {
+    "catalog_url": "http://student.mit.edu/catalog/search.cgi?search=6.3930",
+    "course_url": "",
+    "description": "Fundamental principles and applications of AI in medicine and medical research. Introduces machine learning for clinical decision support, personalized medicine, and computational methods for drug optimization and protein folding, stressing clinical reasoning, risk stratification, and the design of ...",
+    "instructors": "Regina Barzilay, Collin Stultz",
+    "level": "U",
+    "offered_IAP": false,
+    "offered_fall": true,
+    "offered_spring": false,
+    "offered_summer": false,
+    "title": "AI and Decision Making in Medicine: From Disease to Therapy (was 6.S043/6.S983)",
+    "units": 12
+  },
+  "6.7980": {
+    "catalog_url": "http://student.mit.edu/catalog/search.cgi?search=6.7980",
+    "course_url": "",
+    "description": "Foundations of multi-agent systems from a combined game-theoretic, optimization, and learning-theoretic perspective. Covers matrix games, stochastic games, imperfect-information games, equilibrium concepts and computation, and applications including multi-agent reinforcement learning, adversarial le...",
+    "instructors": "Gabriele Farina, Costis Daskalakis",
+    "level": "G",
+    "offered_IAP": false,
+    "offered_fall": true,
+    "offered_spring": false,
+    "offered_summer": false,
+    "title": "Topics in Multiagent Learning (was 6.S890)",
+    "units": 12
+  },
+  "6.S951": {
+    "catalog_url": "http://student.mit.edu/catalog/search.cgi?search=6.S951",
+    "course_url": "",
+    "description": "Project-based course on emerging opportunities for generative AI in scientific research. Draws on recent literature covering representation and grounding of scientific knowledge, generative approaches, inverse design, closed-loop discovery, and agentic approaches to scientific discovery.",
+    "instructors": "Tommi S. Jaakkola",
+    "level": "G",
+    "offered_IAP": false,
+    "offered_fall": true,
+    "offered_spring": false,
+    "offered_summer": false,
+    "title": "AI for Science: Generative AI for Scientific Discovery",
+    "units": 12
+  },
+  "6.S978": {
+    "catalog_url": "http://student.mit.edu/catalog/search.cgi?search=6.S978",
+    "course_url": "",
+    "description": "Principles, abstractions, algorithms, and processes for building, evaluating, and optimizing stochastic AI software systems that invoke pre-trained foundation models. Covers structured generation, evaluation and security of agentic apps, retrieval-augmented generation, tool use and agent harnesses, ...",
+    "instructors": "Omar Khattab",
+    "level": "G",
+    "offered_IAP": false,
+    "offered_fall": true,
+    "offered_spring": false,
+    "offered_summer": false,
+    "title": "Engineering AI Systems and Agents",
+    "units": 12
+  },
+  "6.S979": {
+    "catalog_url": "http://student.mit.edu/catalog/search.cgi?search=6.S979",
+    "course_url": "",
+    "description": "Examines large language model inference as a systems problem, emphasizing low-latency execution, memory-intensive workloads, and deployment across heterogeneous hardware. Covers batching and scheduling, KV-cache management, kernel and compiler co-design, distributed inference, quantization, sparsity...",
+    "instructors": "Nir Shavit, Alex Matveev",
+    "level": "G",
+    "offered_IAP": false,
+    "offered_fall": true,
+    "offered_spring": false,
+    "offered_summer": false,
+    "title": "Introduction to LLM Inference Systems",
+    "units": 12
+  }
+}
