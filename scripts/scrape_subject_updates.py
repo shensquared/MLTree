@@ -12,11 +12,11 @@ import urllib.error
 from html.parser import HTMLParser
 from pathlib import Path
 
-# Subject update URLs by semester
+# Subject update URLs by semester.
+# MIT term codes: Fall 2026 = 2027FA, Spring 2026 = 2026SP (academic-year naming).
 SUBJECT_UPDATE_URLS = {
+    "fall_2026": "https://eecsis.mit.edu/plugins/subj_2027FA.html",
     "spring_2026": "https://eecsis.mit.edu/plugins/subj_2026SP.html",
-    # Add more semesters as needed:
-    # "fall_2025": "https://eecsis.mit.edu/plugins/subj_2025FA.html",
 }
 
 
@@ -245,6 +245,67 @@ SPRING_2026_COURSES = [
 ]
 
 
+# Manually curated Fall 2026 subject updates (ML-relevant subset of the EECS
+# subject-updates page; non-ML topics like Verified Software Engineering,
+# Error-Correcting Codes, and Quantum Error Correction are omitted).
+FALL_2026_COURSES = [
+    {
+        "course_numbers": ["6.S951"],
+        "title": "AI for Science: Generative AI for Scientific Discovery",
+        "description": "Project-based course on emerging opportunities for generative AI in scientific research. Draws on recent literature covering representation and grounding of scientific knowledge, generative approaches, inverse design, closed-loop discovery, and agentic approaches to scientific discovery.",
+        "level": "G",
+        "instructors": "Tommi S. Jaakkola",
+        "offered_fall": True,
+        "offered_spring": False,
+    },
+    {
+        "course_numbers": ["6.S978"],
+        "title": "Engineering AI Systems and Agents",
+        "description": "Principles, abstractions, algorithms, and processes for building, evaluating, and optimizing stochastic AI software systems that invoke pre-trained foundation models. Covers structured generation, evaluation and security of agentic apps, retrieval-augmented generation, tool use and agent harnesses, prompt optimization, fine-tuning, RL, and distillation.",
+        "level": "G",
+        "instructors": "Omar Khattab",
+        "offered_fall": True,
+        "offered_spring": False,
+    },
+    {
+        "course_numbers": ["6.S979"],
+        "title": "Introduction to LLM Inference Systems",
+        "description": "Examines large language model inference as a systems problem, emphasizing low-latency execution, memory-intensive workloads, and deployment across heterogeneous hardware. Covers batching and scheduling, KV-cache management, kernel and compiler co-design, distributed inference, quantization, sparsity, and speculative decoding.",
+        "level": "G",
+        "instructors": "Nir Shavit, Alex Matveev",
+        "offered_fall": True,
+        "offered_spring": False,
+    },
+    {
+        "course_numbers": ["6.7980"],
+        "title": "Topics in Multiagent Learning (was 6.S890)",
+        "description": "Foundations of multi-agent systems from a combined game-theoretic, optimization, and learning-theoretic perspective. Covers matrix games, stochastic games, imperfect-information games, equilibrium concepts and computation, and applications including multi-agent reinforcement learning, adversarial learning, and game-playing agents.",
+        "level": "G",
+        "instructors": "Gabriele Farina, Costis Daskalakis",
+        "offered_fall": True,
+        "offered_spring": False,
+    },
+    {
+        "course_numbers": ["6.3930", "6.3932"],
+        "title": "AI and Decision Making in Medicine: From Disease to Therapy (was 6.S043/6.S983)",
+        "description": "Fundamental principles and applications of AI in medicine and medical research. Introduces machine learning for clinical decision support, personalized medicine, and computational methods for drug optimization and protein folding, stressing clinical reasoning, risk stratification, and the design of novel therapeutics.",
+        "level": "U",
+        "instructors": "Regina Barzilay, Collin Stultz",
+        "offered_fall": True,
+        "offered_spring": False,
+    },
+    {
+        "course_numbers": ["21M.589"],
+        "title": "Audio Computing: Processing Sound in Engineering, Science, and the Arts",
+        "description": "Computational tools for sound and vibration analysis, including basic signal processing, machine learning audio, microphone and speaker arrays, signal enhancement and restoration, and psychoacoustics. Applications include sound-event classifiers, speech recognition, denoising, and source separation.",
+        "level": "G",
+        "instructors": "Paris Smaragdis, Mark Rau",
+        "offered_fall": True,
+        "offered_spring": False,
+    },
+]
+
+
 def build_course_data(courses: list) -> dict:
     """Convert course list to lookup dict matching existing format."""
     result = {}
@@ -276,15 +337,15 @@ def main():
     print("MLCoursesTree - Subject Updates Scraper")
     print("=" * 60)
 
-    # Use the manually curated data for Spring 2026
-    courses = SPRING_2026_COURSES
-    print(f"Processing {len(courses)} Spring 2026 subject updates")
+    # Use the manually curated data for Fall 2026
+    courses = FALL_2026_COURSES
+    print(f"Processing {len(courses)} Fall 2026 subject updates")
 
     # Build course data dict
     course_data = build_course_data(courses)
 
     # Write output
-    output_path = Path(__file__).parent.parent / "data" / "subject_updates_sp26.json"
+    output_path = Path(__file__).parent.parent / "data" / "subject_updates_fa26.json"
     output_path.parent.mkdir(exist_ok=True)
 
     with open(output_path, "w") as f:

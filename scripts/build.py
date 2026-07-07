@@ -105,10 +105,10 @@ def get_toggle_ui() -> str:
   margin-top: 10px;
   padding-top: 8px;
   border-top: 1px solid #eee;
-  font-size: 11px;
-  color: #888;
+  font-size: 12px;
+  color: #0066cc;
   text-align: center;
-  font-style: italic;
+  font-weight: 500;
 }
 
 .filter-label {
@@ -266,8 +266,9 @@ def get_filter_script(course_data: dict) -> str:
   function extractCourseNumbers(content) {{
     const numbers = [];
 
-    // Match course numbers: digits.alphanumerics (e.g., 6.390, 18.05, 6.C01, 6.S951)
-    const pattern = /(\\d+\\.[A-Za-z]?\\d*[A-Za-z]*\\d*)/g;
+    // Match course numbers: dept.number (e.g., 6.390, 18.05, 6.C01, 6.S951, 21M.589)
+    // Dept may include a letter suffix (21M, 21W); number may be alphanumeric (C01, S951).
+    const pattern = /(\\d+[A-Za-z]*\\.[A-Za-z]?\\d*[A-Za-z]*\\d*)/g;
     let match;
 
     while ((match = pattern.exec(content)) !== null) {{
