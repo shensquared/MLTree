@@ -15,57 +15,13 @@ markmap:
     - 6.C01 Modeling with Machine Learning: from Algorithms to Applications
     - 6.796 [Deep Learning](https://phillipi.github.io/6.7960/)
     - 6.790 [6.867] [Machine Learning](https://gradml.mit.edu)
-  
-  - Statistics
-    - How do we use noisy data to make conclusions?
-    - How can we measure how sure (or unsure) we are about these conclusions?
-    - 18.05 Introduction to Probability and Statistics
-    - 18.650 Fundamentals of Statistics
-    - 6.372 [6.401] Introduction to Statistical Data Analysis
-    - 6.S951 Modern Mathematical Statistics
-    - …plus more in Courses 14 and 15.
-  - Inference
-    - What do we believe when new information conflicts with old knowledge?
-    - How can we understand random, complex processes driven by lots of variables?
-    - 6.3700 [6.041] Introduction to Probability
-    - 6.3800 [6.008] Introduction to Inference
-    - 6.7700 [6.436] Fundamentals of Probability
-    - 6.7800 [6.437] Inference and Information
-    - 6.7810 [6.438] Algorithms for Inference
-    - 6.7830 [6.435] Bayesian Modeling and Inference
-  - Theory
-    - How does our model's performance depend on how much data we have?
-    - What can we prove about the performance of optimization and reinforcement learning algorithms?
-    - 6.7910 [6.860] Statistical Learning Theory and Applications
-    - 6.7940 [6.231] Dynamic Programming and Reinforcement Learning
-    - 6.7950 [6.246] Reinforcement Learning: Foundations and Methods
-    - …plus parts of 6.7900 [6.867] and the inference classes.
-  - Systems
-    - How can we adapt machine learning to the software and hardware it runs on?
-    - What are other ways to approach programming as a whole, and when are they effective?
-    - 6.5931 [6.812] Hardware Architecture for Deep Learning
-    - 6.S079 [Software Systems for Data Science](http://dsg.csail.mit.edu/6.S079/)
-    - 6.S965 TinyML and Efficient Deep Learning Computing
-    - 6.S981 Introduction to Program Synthesis
-    - 6.S042/6.5820 Computer Networks
+
   - Agentic AI
     - How do we build reliable software on top of models we did not train?
     - What should we hand to an AI agent, and what do we keep and check ourselves?
     - 6.S950 Agency with AI: Effective AI Use in Applied Machine-Learning Projects
     - 6.S978 Engineering AI Systems and Agents
     - 6.S979 Introduction to LLM Inference Systems
-  - Society
-    - Who is harmed from how machine learning is used? Who benefits?
-    - Who gets to decide how machine learning is used? And how should it be used?
-    - 6.3950 [6.404] AI, Decision Making, and Society
-    - 6.4590 [6.805] Foundations of Information Policy
-    - 6.C40/24.C40 Ethics of Computing
-  - Cognition
-    - How can we model how humans think?
-    - What can machine learning practitioners learn from neurobiology?
-    - 6.4120 [6.804] Computational Cognitive Science
-    - 6.S899 Brain Algorithms
-    - 6.S978 Tissue vs. Silicon in Machine Learning
   - Applications
     - 6.C011/C511 Modeling with Machine Learning for Computer Science
     - 6.3730 Statistics, Computation and Applications
@@ -77,6 +33,50 @@ markmap:
     - 6.8711 [6.802] Computational Systems Biology: Deep Learning in the Life Sciences
     - 6.S980 Machine Learning for Inverse Graphics
     - 6.S982 Clinical Data Learning, Visualization, and Deployments
+  - Cognition
+    - How can we model how humans think?
+    - What can machine learning practitioners learn from neurobiology?
+    - 6.4120 [6.804] Computational Cognitive Science
+    - 6.S899 Brain Algorithms
+    - 6.S978 Tissue vs. Silicon in Machine Learning
+  - Inference
+    - What do we believe when new information conflicts with old knowledge?
+    - How can we understand random, complex processes driven by lots of variables?
+    - 6.3700 [6.041] Introduction to Probability
+    - 6.3800 [6.008] Introduction to Inference
+    - 6.7700 [6.436] Fundamentals of Probability
+    - 6.7800 [6.437] Inference and Information
+    - 6.7810 [6.438] Algorithms for Inference
+    - 6.7830 [6.435] Bayesian Modeling and Inference
+  - Society
+    - Who is harmed from how machine learning is used? Who benefits?
+    - Who gets to decide how machine learning is used? And how should it be used?
+    - 6.3950 [6.404] AI, Decision Making, and Society
+    - 6.4590 [6.805] Foundations of Information Policy
+    - 6.C40/24.C40 Ethics of Computing
+  - Statistics
+    - How do we use noisy data to make conclusions?
+    - How can we measure how sure (or unsure) we are about these conclusions?
+    - 18.05 Introduction to Probability and Statistics
+    - 18.650 Fundamentals of Statistics
+    - 6.372 [6.401] Introduction to Statistical Data Analysis
+    - 6.S951 Modern Mathematical Statistics
+    - …plus more in Courses 14 and 15.
+  - Systems
+    - How can we adapt machine learning to the software and hardware it runs on?
+    - What are other ways to approach programming as a whole, and when are they effective?
+    - 6.5931 [6.812] Hardware Architecture for Deep Learning
+    - 6.S079 [Software Systems for Data Science](http://dsg.csail.mit.edu/6.S079/)
+    - 6.S965 TinyML and Efficient Deep Learning Computing
+    - 6.S981 Introduction to Program Synthesis
+    - 6.S042/6.5820 Computer Networks
+  - Theory
+    - How does our model's performance depend on how much data we have?
+    - What can we prove about the performance of optimization and reinforcement learning algorithms?
+    - 6.7910 [6.860] Statistical Learning Theory and Applications
+    - 6.7940 [6.231] Dynamic Programming and Reinforcement Learning
+    - 6.7950 [6.246] Reinforcement Learning: Foundations and Methods
+    - …plus parts of 6.7900 [6.867] and the inference classes.
 
   - [Fall 2026](https://www.eecs.mit.edu/academics/subject-updates/subject-updates-fall-2026/) New/Special
     - 6.S950 Agency with AI: Effective AI Use in Applied Machine-Learning Projects
