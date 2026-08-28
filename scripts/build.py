@@ -34,14 +34,26 @@ def run_markmap():
 
 
 def load_course_data() -> dict:
-    """Load scraped course metadata from all sources."""
+    """
+    Load scraped course metadata from all sources.
+
+    Special-topics numbers get reused across terms, so 6.S951 in Fireroad and
+    6.S951 on the subject-updates page can be different courses. Each number
+    maps to a list of candidate entries; the page picks among them by title.
+    """
     data = {}
+
+    def add(entries: dict):
+        for number, entry in entries.items():
+            candidates = data.setdefault(number, [])
+            if entry not in candidates:
+                candidates.append(entry)
 
     # Load main Fireroad course data
     main_data_path = PROJECT_ROOT / "data" / "course_data.json"
     if main_data_path.exists():
         with open(main_data_path) as f:
-            data.update(json.load(f))
+            add(json.load(f))
     else:
         print(f"Warning: {main_data_path} not found")
         print("Run 'python scripts/scrape_courses.py' first to fetch course data")
@@ -51,9 +63,7 @@ def load_course_data() -> dict:
     for updates_file in subject_updates_dir.glob("subject_updates_*.json"):
         print(f"Loading subject updates from {updates_file.name}...")
         with open(updates_file) as f:
-            updates = json.load(f)
-            # Subject updates override main data for special topics
-            data.update(updates)
+            add(json.load(f))
 
     return data
 
@@ -278,13 +288,80 @@ def get_filter_script(course_data: dict) -> str:
     return numbers;
   }}
 
+  // Words too common to tell one course title from another
+  const TITLE_STOPWORDS = new Set([
+    'a', 'an', 'and', 'the', 'to', 'of', 'for', 'in', 'with', 'from', 'on',
+    'introduction', 'intro', 'topics', 'special', 'subject', 'studies'
+  ]);
+
+  function titleWords(text) {{
+    return (text || '').toLowerCase().match(/[a-z0-9]+/g) || [];
+  }}
+
+  // How much of a course title shows up in the node's own text, 0 to 1.
+  // Generic catalog titles ("Special Subject in EECS") score near 0, which is
+  // what we want: they make no claim about the topic.
+  function titleScore(title, nodeWords) {{
+    const words = titleWords(title)
+      .filter(w => w.length > 2 && !TITLE_STOPWORDS.has(w));
+    if (words.length === 0) return 0;
+
+    return words.filter(w => nodeWords.has(w)).length / words.length;
+  }}
+
+  // Special-topics numbers get reused, so one number can hold several entries
+  // (e.g. 6.S951 is both Modern Mathematical Statistics and AI for Science).
+  // Pick the entry whose title actually shows up in the node's own text.
+  function lookupCourse(courseId, content) {{
+    const candidates = COURSE_DATA[courseId];
+    if (!candidates || candidates.length === 0) return null;
+    if (candidates.length === 1) return candidates[0];
+
+    const nodeWords = new Set(titleWords(content));
+    let best = candidates[0];
+    let bestScore = 0;
+
+    candidates.forEach(candidate => {{
+      const score = titleScore(candidate.title, nodeWords);
+      if (score > bestScore) {{
+        bestScore = score;
+        best = candidate;
+      }}
+    }});
+
+    // Nothing matched, so fall back to the first entry, the catalog's own.
+    return best;
+  }}
+
+  // Pick the entry to describe a node that may carry several numbers, such as
+  // "6.S042/6.5820 Computer Networks". The best title match wins, so a
+  // cross-listing with a real catalog title beats a bare special-subject shell.
+  function selectCourse(courseNumbers, content) {{
+    const nodeWords = new Set(titleWords(content));
+    let best = null;
+    let bestScore = -1;
+
+    for (const courseId of courseNumbers) {{
+      const data = lookupCourse(courseId, content);
+      if (!data) continue;
+
+      const score = titleScore(data.title, nodeWords);
+      if (score > bestScore) {{
+        bestScore = score;
+        best = {{ courseId, data }};
+      }}
+    }}
+
+    return best;
+  }}
+
   // Check if any of the course numbers pass current filters
-  function coursePassesFilters(courseNumbers) {{
+  function coursePassesFilters(courseNumbers, content) {{
     if (courseNumbers.length === 0) return true; // Non-course nodes pass
 
     // Check if ANY of the course numbers pass (for cross-listed courses)
     for (const courseId of courseNumbers) {{
-      const data = COURSE_DATA[courseId];
+      const data = lookupCourse(courseId, content);
       if (!data) continue; // Unknown courses - keep checking others
 
       // Check semester filter
@@ -301,7 +378,7 @@ def get_filter_script(course_data: dict) -> str:
     }}
 
     // If we found course numbers but none passed, check if any were unknown
-    const hasKnownCourse = courseNumbers.some(id => COURSE_DATA[id]);
+    const hasKnownCourse = courseNumbers.some(id => lookupCourse(id, content));
     if (!hasKnownCourse) return true; // All unknown = pass through
 
     return false;
@@ -329,7 +406,7 @@ def get_filter_script(course_data: dict) -> str:
         return;
       }}
 
-      const passes = coursePassesFilters(courseNumbers);
+      const passes = coursePassesFilters(courseNumbers, content);
       node.classList.toggle('filtered-out', !passes);
 
       // Also handle the connecting line
@@ -440,18 +517,12 @@ def get_filter_script(course_data: dict) -> str:
 
       if (courseNumbers.length === 0) return;
 
-      // Find first known course
-      let primaryCourse = null;
-      let primaryData = null;
-      for (const num of courseNumbers) {{
-        if (COURSE_DATA[num]) {{
-          primaryCourse = num;
-          primaryData = COURSE_DATA[num];
-          break;
-        }}
-      }}
+      // Find the entry that best describes this node
+      const selected = selectCourse(courseNumbers, content);
+      if (!selected) return;
 
-      if (!primaryData) return;
+      const primaryCourse = selected.courseId;
+      const primaryData = selected.data;
 
       // Create tooltip on the foreignObject element
       tippy(fo, {{

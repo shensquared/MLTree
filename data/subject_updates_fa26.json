@@ -1,8 +1,34 @@
 {
+  "18.S995": {
+    "catalog_url": "http://student.mit.edu/catalog/search.cgi?search=18.S995",
+    "course_url": "",
+    "description": "Covers selected topics in the mathematical foundations of deep learning. Topics may include scaling limits of wide and deep networks, such as the neural tangent kernel, mean-field dynamics, and the maximal update parameterization (\u03bcP); mechanisms of feature learning and separations from kernel metho...",
+    "instructors": "Alex Damian",
+    "level": "G",
+    "offered_IAP": false,
+    "offered_fall": true,
+    "offered_spring": false,
+    "offered_summer": false,
+    "title": "Topics in Deep Learning Theory",
+    "units": 12
+  },
+  "21M.569": {
+    "catalog_url": "http://student.mit.edu/catalog/search.cgi?search=21M.569",
+    "course_url": "",
+    "description": "This class proposes that the study of sound and movement practices can inform how we build and envision computational systems, focusing particularly on our relationships to AIs. This course explores computational and humanistic approaches to attention through alignment; tuning AI systems while explo...",
+    "instructors": "Anna Huang, Grisha Coleman",
+    "level": "G",
+    "offered_IAP": false,
+    "offered_fall": true,
+    "offered_spring": false,
+    "offered_summer": false,
+    "title": "Tuning Attention: Creative Practices in Movement, Sound, and AI",
+    "units": 12
+  },
   "21M.589": {
     "catalog_url": "http://student.mit.edu/catalog/search.cgi?search=21M.589",
     "course_url": "",
-    "description": "Computational tools for sound and vibration analysis, including basic signal processing, machine learning audio, microphone and speaker arrays, signal enhancement and restoration, and psychoacoustics. Applications include sound-event classifiers, speech recognition, denoising, and source separation.",
+    "description": "This class will cover an extensive range of topics that relate to sound and vibration analysis, focusing on computational tools needed to process such data, and exploring applications in various disciplines. Material covered will include basic signal processing, vibration and acoustical simulations ...",
     "instructors": "Paris Smaragdis, Mark Rau",
     "level": "G",
     "offered_IAP": false,
@@ -15,7 +41,7 @@
   "6.3930": {
     "catalog_url": "http://student.mit.edu/catalog/search.cgi?search=6.3930",
     "course_url": "",
-    "description": "Fundamental principles and applications of AI in medicine and medical research. Introduces machine learning for clinical decision support, personalized medicine, and computational methods for drug optimization and protein folding, stressing clinical reasoning, risk stratification, and the design of ...",
+    "description": "Introduction to fundamental principles and applications of artificial intelligence (AI) in medicine and medical research. Students are introduced to foundational concepts in machine learning as it pertains to clinical decision support systems, personalized medicine, and advanced computational method...",
     "instructors": "Regina Barzilay, Collin Stultz",
     "level": "U",
     "offered_IAP": false,
@@ -28,7 +54,7 @@
   "6.3932": {
     "catalog_url": "http://student.mit.edu/catalog/search.cgi?search=6.3930",
     "course_url": "",
-    "description": "Fundamental principles and applications of AI in medicine and medical research. Introduces machine learning for clinical decision support, personalized medicine, and computational methods for drug optimization and protein folding, stressing clinical reasoning, risk stratification, and the design of ...",
+    "description": "Introduction to fundamental principles and applications of artificial intelligence (AI) in medicine and medical research. Students are introduced to foundational concepts in machine learning as it pertains to clinical decision support systems, personalized medicine, and advanced computational method...",
     "instructors": "Regina Barzilay, Collin Stultz",
     "level": "U",
     "offered_IAP": false,
@@ -41,7 +67,7 @@
   "6.7980": {
     "catalog_url": "http://student.mit.edu/catalog/search.cgi?search=6.7980",
     "course_url": "",
-    "description": "Foundations of multi-agent systems from a combined game-theoretic, optimization, and learning-theoretic perspective. Covers matrix games, stochastic games, imperfect-information games, equilibrium concepts and computation, and applications including multi-agent reinforcement learning, adversarial le...",
+    "description": "Examines the foundations of multi-agent systems from a combined game-theoretic, optimization, and learning-theoretic perspective. Studies settings involving multiple learning agents with distinct objectives, where standard training methods may induce nonstationary or unstable behaviors. Introduces f...",
     "instructors": "Gabriele Farina, Costis Daskalakis",
     "level": "G",
     "offered_IAP": false,
@@ -51,11 +77,24 @@
     "title": "Topics in Multiagent Learning (was 6.S890)",
     "units": 12
   },
+  "6.S950": {
+    "catalog_url": "http://student.mit.edu/catalog/search.cgi?search=6.S950",
+    "course_url": "",
+    "description": "Examines the effective use of agentic AI tools in applied machine-learning work, such as a UROP or MEng project. Develops both fluency with the tools and judgment about what to delegate, what to verify, and what to keep for oneself to do. Introduces good agentic-AI practices such as spec-driven deve...",
+    "instructors": "Shen Shen",
+    "level": "U",
+    "offered_IAP": false,
+    "offered_fall": true,
+    "offered_spring": false,
+    "offered_summer": false,
+    "title": "Agency with AI: Effective AI Use in Applied Machine-Learning Projects",
+    "units": 12
+  },
   "6.S951": {
     "catalog_url": "http://student.mit.edu/catalog/search.cgi?search=6.S951",
     "course_url": "",
-    "description": "Project-based course on emerging opportunities for generative AI in scientific research. Draws on recent literature covering representation and grounding of scientific knowledge, generative approaches, inverse design, closed-loop discovery, and agentic approaches to scientific discovery.",
-    "instructors": "Tommi S. Jaakkola",
+    "description": "This project based course focuses on emerging opportunities of generative AI in scientific research. The course draws on recent literature pertaining to representation and grounding of scientific knowledge, generative approaches, inverse design, closed-loop discovery, and agentic approaches to scien...",
+    "instructors": "Tommi S Jaakkola",
     "level": "G",
     "offered_IAP": false,
     "offered_fall": true,
@@ -64,10 +103,23 @@
     "title": "AI for Science: Generative AI for Scientific Discovery",
     "units": 12
   },
+  "6.S974": {
+    "catalog_url": "http://student.mit.edu/catalog/search.cgi?search=6.S974",
+    "course_url": "",
+    "description": "Studies decision-making in systems whose outcomes depend on the actions of other agents, human and artificial. Covers game-theoretic models of strategic interaction and equilibrium; reinforcement learning and multi-agent learning, including when learning agents converge to an equilibrium, cycle, or ...",
+    "instructors": "Asu Ozdaglar, Mathieu Dahan, Themistoklis Sapsis, Saurabh Amin",
+    "level": "G",
+    "offered_IAP": false,
+    "offered_fall": true,
+    "offered_spring": false,
+    "offered_summer": false,
+    "title": "Games, Learning, and Security",
+    "units": 12
+  },
   "6.S978": {
     "catalog_url": "http://student.mit.edu/catalog/search.cgi?search=6.S978",
     "course_url": "",
-    "description": "Principles, abstractions, algorithms, and processes for building, evaluating, and optimizing stochastic AI software systems that invoke pre-trained foundation models. Covers structured generation, evaluation and security of agentic apps, retrieval-augmented generation, tool use and agent harnesses, ...",
+    "description": "Introduces principles, abstractions, algorithms, and processes for building, evaluating, and optimizing stochastic AI software systems that invoke pre-trained foundation models inside computer programs. Topics include programming models for language model systems; structured generation and constrain...",
     "instructors": "Omar Khattab",
     "level": "G",
     "offered_IAP": false,
@@ -80,8 +132,8 @@
   "6.S979": {
     "catalog_url": "http://student.mit.edu/catalog/search.cgi?search=6.S979",
     "course_url": "",
-    "description": "Examines large language model inference as a systems problem, emphasizing low-latency execution, memory-intensive workloads, and deployment across heterogeneous hardware. Covers batching and scheduling, KV-cache management, kernel and compiler co-design, distributed inference, quantization, sparsity...",
-    "instructors": "Nir Shavit, Alex Matveev",
+    "description": "This subject examines large language model (LLM) inference as a systems problem, with emphasis on low-latency execution, memory-intensive workloads, and deployment across heterogeneous hardware. Topics include batching and scheduling, KV-cache management, kernel and compiler co-design, distributed a...",
+    "instructors": "Nir N. Shavit, Alex Matveev",
     "level": "G",
     "offered_IAP": false,
     "offered_fall": true,
