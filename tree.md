@@ -48,6 +48,12 @@ markmap:
     - 6.S965 TinyML and Efficient Deep Learning Computing
     - 6.S981 Introduction to Program Synthesis
     - 6.S042/6.5820 Computer Networks
+  - Agentic AI
+    - How do we build reliable software on top of models we did not train?
+    - What should we hand to an AI agent, and what do we keep and check ourselves?
+    - 6.S950 Agency with AI: Effective AI Use in Applied Machine-Learning Projects
+    - 6.S978 Engineering AI Systems and Agents
+    - 6.S979 Introduction to LLM Inference Systems
   - Society
     - Who is harmed from how machine learning is used? Who benefits?
     - Who gets to decide how machine learning is used? And how should it be used?
@@ -73,9 +79,13 @@ markmap:
     - 6.S982 Clinical Data Learning, Visualization, and Deployments
 
   - [Fall 2026](https://www.eecs.mit.edu/academics/subject-updates/subject-updates-fall-2026/) New/Special
+    - 6.S950 Agency with AI: Effective AI Use in Applied Machine-Learning Projects
     - 6.S951 AI for Science: Generative AI for Scientific Discovery
+    - 6.S974 Games, Learning, and Security
     - 6.S978 Engineering AI Systems and Agents
     - 6.S979 Introduction to LLM Inference Systems
     - 6.7980 Topics in Multiagent Learning (was 6.S890)
     - 6.3930/2 AI and Decision Making in Medicine: From Disease to Therapy (was 6.S043/6.S983)
+    - 18.S995 Topics in Deep Learning Theory
+    - 21M.569 Tuning Attention: Creative Practices in Movement, Sound, and AI
     - 21M.589 Audio Computing: Processing Sound in Engineering, Science, and the Arts
