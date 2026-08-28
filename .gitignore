@@ -8,13 +8,18 @@ packages/*/coverage
 packages/*/types
 package-lock.json
 
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+
 # General
 .DS_Store
 .AppleDouble
 .LSOverride
 
 # Icon must end with two \r
-Icon
+Icon
 
 # Thumbnails
 ._*
