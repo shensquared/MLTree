@@ -19,7 +19,7 @@ markmap:
   - Agentic AI
     - How do we build reliable software on top of models we did not train?
     - What should we hand to an AI agent, and what do we keep and check ourselves?
-    - 6.S950 Agency with AI: Effective AI Use in Applied Machine-Learning Projects
+    - 6.S950 [Agency with AI: Effective AI Use in Applied Machine-Learning Projects](https://shenshen.mit.edu/agencyai)
     - 6.S978 Engineering AI Systems and Agents
     - 6.S979 Introduction to LLM Inference Systems
   - Applications
@@ -79,7 +79,7 @@ markmap:
     - …plus parts of 6.7900 [6.867] and the inference classes.
 
   - [Fall 2026](https://www.eecs.mit.edu/academics/subject-updates/subject-updates-fall-2026/) New/Special
-    - 6.S950 Agency with AI: Effective AI Use in Applied Machine-Learning Projects
+    - 6.S950 [Agency with AI: Effective AI Use in Applied Machine-Learning Projects](https://shenshen.mit.edu/agencyai)
     - 6.S951 AI for Science: Generative AI for Scientific Discovery
     - 6.S974 Games, Learning, and Security
     - 6.S978 Engineering AI Systems and Agents
